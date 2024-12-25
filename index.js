@@ -6,9 +6,9 @@ const ticketNumberMax = 1937;
 
 // Отберем потанциально выигрышные билеты удовлетворяющие условиям
 const winningTickets = [];
-for (let nam = ticketNumberMin; nam <= ticketNumberMax; nam++) {
-    if (nam % 3 === 0 && nam % 7 === 0) {
-        winningTickets.push(nam);
+for (let num = ticketNumberMin; num <= ticketNumberMax; num++) {
+    if (num % 3 === 0 && num % 7 === 0 && num % 5 !== 0 && num % 2 !== 0) {
+        winningTickets.push(num);
     }
 }
 // Найдем выигрышный билет самым большим номером
